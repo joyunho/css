@@ -1,0 +1,89 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            order:-1;
+        }
+        body{
+            padding-bottom:30px;
+            display:flex;
+            align-items:center;
+            justify-content: center ;
+        }
+        .container{
+            display:flex;
+            flex-direction:column;
+            width: 800px;
+            border:1px solid gray;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align:center;
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            border-right:1px solid gray;
+        }
+        .content aside{
+            border-left:1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0px;
+        }
+        main{
+            padding:10px;
+            border:2px solid skyblue;
+        }
+        #next{
+            position:fixed;
+            bottom:0px;
+            right:0px;
+        }
+        #prev{
+            position:fixed;
+            bottom:0px;
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>노래공유사이트</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>음악</li>
+                    <li>비트</li>
+                    <li>악기</li>
+                </ul>
+            </nav>
+            <main>
+                랩을 사랑하는 사람들의 모임입니다. <br>
+                안녕! 잘 하고 있어! 친구랑 가족들도 다 너 믿고 기다리면서 응원해주고 있을거야 
+                너는 세상에서 제일 소중한 존재야 잊지마! 오늘하루도 고생했어😁😁
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="music.html">홈페이지</a>
+        </footer>
+    </div>
+    <div id="prev"><a href="note2.html">이전페이지</a></div>
+    <div id="next"><a href="note4.html">다음페이지</a></div>
+</html>
